@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<body class="container-fluid">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About Us</a>
+              </li>
+            </ul>
+            <span class="navbar-text" style="margin-right:60px ;">
+              <div class="dropdown ">
+                <a href="" class="dropdown-toggle text-decoration-none text-white" data-bs-toggle="dropdown" id="login1">Login</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-text "><a href="" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#class1">Sign in</a></li>
+                    <li class="dropdown-text text-decoration-none"><a href="" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#class2">Sign out</a></li>
+                    <li class="dropdown-text text-decoration-none"><a href="" class="text-decoration-none">Password</a></li>
+
+                </ul>
+
+              </div>
+            </span>
+          </div>
+        </div>
+      </nav>
+      <div class="modal" id="class2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-primary">Sign out Form</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>Email</dt>
+                        
+                        <dd class="d-flex input-group">
+                            <button class="btn btn-warning"></button>
+                            <input type="Email" class="form-control">
+                            <button class="btn btn-warning"><i class="bi bi-star-fill"></i></button>
+                        </dd>
+                       
+                        <dt>Mobile</dt>
+                        
+                        <dd class="d-flex input-group">
+                            <button class="btn btn-warning"></button>
+                            <input type="Email" class="form-control">
+                            <button class="btn btn-warning"><i class="bi bi-star-fill"></i></button>
+                        </dd>
+                       
+                    </dl>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-primary">Submit</button>
+                    <button class="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+      </div>
+
+
+
+
+      <div class="modal" id="class1"> 
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Sign in Form</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>Email Id</dt>
+                        <dd class="d-flex input-group"> 
+                            <button class="btn btn-danger"></button>
+                            <input type="Email" class="form-control">
+                            <button class="btn btn-danger"><i class="bi bi-star-fill"></i></button>
+                        </dd>
+                        <dt>Mobile</dt>
+                        <dd class="d-flex input-group ">
+                            <button class="btn btn-danger"></button>
+                            <input type="text" class="form-control">
+                            <button class="btn btn-danger"><i class="bi bi-star-fill"></i></button>
+                        </dd>
+
+                    </dl>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-primary" >Submit</button>
+                    <button class="btn btn-outline-danger">Cancel</button>
+                    <p id="ok"></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+      </div>
+      
+
+
+    <div class="carousel mt-5" data-bs-ride="carousel" id="ride">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="hottel1.jpeg" id="irani1 d-block" class="w-100" height="500px">
+                
+
+                <div class="carousel-caption">
+                    <h1 class=" " id="irani" >Welcome to Irani</h1>
+                    <button class="btn btn-outline-danger" id="irani3">Subcribe</button>
+
+                </div>
+
+            </div>
+            <div class="carousel-item " data-bs-interval="2000">
+                <img src="hottel2.jpg" id="hottel2" class="d-block w-100" height="500px">
+                <div class="carousel-caption">
+                    <h1 id="hottel1">How to Fill IN Irani</h1>
+                    <button class="btn btn-outline-danger" id="hottel0">Subcribe</button>
+
+                </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="hottel3.jpg" id="phone1" class=" d-block w-100" height="500px">
+                <div class="carousel-caption">
+                    <h1 id="phone2">Silent In irani</h1>
+                    <button class="btn btn-outline-danger" id="phone3">Subcribe</button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#ride" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+        <button class="carousel-control-next" data-bs-target="#ride" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button data-bs-target="#ride" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#ride" data-bs-slide-to="1"></button>
+            <button data-bs-target="#ride" data-bs-slide-to="2"></button>
+
+        </div>
+    </div>
+    <div class="accordin mt-5" id="power1">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="btn btn-danger w-100" data-bs-target="#power2" data-bs-toggle="collapse">Customer info</button>
+
+            </div>
+            <!-- customer info -->
+            <div class="accordion-collapse collapse" id="power2" data-bs-parent="#power1">
+                <div class="accordion-body">
+                    <dl>
+                        <dt>Customer Name</dt>
+                        <dd ><input type="text" id="txtcustomer" class="form-control" value=""></dd>
+                        <dt>Check in Date</dt>
+                        <dd><input type="date"  id="txtdate" class="form-control"></dd>
+                       <dt> Total No Of Days</dt>
+                       <dd ><input type="number" id="txtdays" class="form-control"></dd>
+                       <dt>Total No Of Person</dt>
+                       <dd ><input type="number" id="txtperson" class="form-control"></dd>
+                    </dl>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Select Room Type -->
+    <div class="accordion-item ">
+        <div class="accordion-header">
+            <button class="btn btn-danger w-100 mt-4" data-bs-toggle="collapse" data-bs-target="#matter1">Select Room Type</button>
+
+        </div>
+        <div class="accordion-collapse collapse" id="matter1" data-bs-parent="#power1">
+            <div class="accordion-body">
+                <div class="row justify-content-center text-center" id="row1">
+                    <div class="col">
+                        <img src="delex1.jpg" height="250px" class="mt-3 w-100">
+                        <dl>
+                            <dt></dt>
+                            <dd><input type="radio" value="Delex Room" name="home" id="txtradio1" class="input-form-control mt-2">Delex Room</dd>
+                        </dl>
+
+                    </div>
+                    <div class="col">
+                        <img src="delex2.jpg" height="250px" class="mt-3 w-100">
+                        <dl>
+                            <dt><input type="radio" name="home" id="txtradio2" class="input-form-control mt-2" value="Suite Room">Suite Room</dt>
+                        </dl>
+
+                    </div>
+
+
+                </div>
+                
+
+            </div>
+
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="btn btn-danger w-100 mt-4" data-bs-toggle="collapse" data-bs-target="#coll1">Select Amenities</button>
+
+            </div>
+            <div class="accordion-collapse collapse" id="coll1" data-bs-parent="#power1">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col justify-content-center text-center">
+                            <img src="ac1.jpg" class="w-100 mt-4" height="300px">
+                            <dl>
+                                <dt></dt>
+                                <dd class="fs-2" style="margin-left:10px ;"><input type="checkbox"  id="check1" value="A/c">A/C</dd>
+                                <dd class="fs-2">₹1500/-</dd>
+                            </dl>
+
+                        </div>
+                        <div class="col">
+                            <img src="ac2.jpg" class="w-100 mt-4" height="300px">
+                            <dl>
+                                <dt></dt>
+                                <dd  class="fs-2" ><input id="check2" type="checkbox"  style="margin-left:200px ;"  >Locker</dd>
+                                <dd style="margin-left: 200px;" class="fs-2">₹2000/-</dd>
+                            </dl>
+
+                        </div>
+
+                    </div>
+                   
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Adavance Amount -->
+        <div class="accordion-item ">
+            <div class="accordion-header">
+                <button class="btn btn-danger mt-4 w-100" data-bs-toggle="collapse" data-bs-target="#coll2">Adavance Amount</button>
+               <div class="accordion-collapse collapse" id="coll2" data-bs-parent="#power1">
+                <div class="accordion-body">
+                    <dl>
+                        <dt>Adavance Amount</dt>
+                        <dd id="txttotal"><input type="text" class="form-control"></dd>
+                    </dl>
+
+                </div>
+
+               </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <button class="btn btn-danger w-100 mt-4" data-bs-toggle="modal" data-bs-target="#modal1" onclick="abc()">Register</button>
+    <div class="modal " id="modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="text-primary">Registration Form</h1>
+                    <button class="btn-close" data-bs-dismiss="modal" ></button>
+
+
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>Customer Name :</dt>
+                        <dd id="lblcustomer"></dd>
+                        <dt>Check in Date :</dt>
+                        <dd id="lbldate"></dd>
+                        <dt>Total No of Days :</dt>
+                        <dd id="lblday"></dd>
+                        <dt>Total No of Person :</dt>
+                        <dd id="lblperson"></dd>
+                        <dt>Room Type</dt>
+                        <dd id="lblrroom"></dd>
+                        <dt>Adavance Amount :</dt>
+                        <dd id="lbladavance"></dd>
+                        <dt>Balanace Amount :</dt>
+                        <dd id="lblbalance" ></dd>
+                        <button class="btn btn-primary" data-bs-dismiss="modal" style="float:right ;">ok</button>
+                        <button class="btn btn-warning" onclick="window.print()" style="float:right ; margin-right: 15px;">Payment Print</button>
+
+                    </dl>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <img src="wal1.jpg" id="wal1" class="w-100" height="300px">
+
+        </div>
+        <div class="col-md-6">
+            <p class="mt-md-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum amet rerum quam quia asperiores aliquam qui mollitia ducimus iure eaque reiciendis suscipit error, perspiciatis explicabo vel, totam corporis fuga, fugiat voluptatem! Aliquid repellendus modi expedita illum sint, necessitatibus autem sapiente aperiam magni ex eveniet minus exercitationem dolorum, dolores inventore praesentium architecto est consequatur, molestiae pariatur quia. Impedit sapiente voluptates officiis est similique necessitatibus explicabo inventore ducimus optio repellendus eos quibusdam nulla porro dolor incidunt adipisci, reiciendis itaque? Repellendus, labore libero.</p>
+
+        </div>
+
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-6">
+            <p class="mt-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, magni aspernatur ducimus repellat nisi tempora, saepe maxime eligendi recusandae eveniet, esse fugit aut architecto doloremque quisquam magnam hic voluptates! Beatae voluptates laudantium quia, rem harum laborum? Quos eligendi nostrum dolorum? Officiis, consequuntur facilis quidem culpa cupiditate totam accusamus? Itaque quod ex quaerat voluptatibus tempora quam illum? Deleniti impedit consequatur totam optio? Beatae eveniet quo, expedita labore excepturi assumenda debitis ducimus minima quaerat possimus necessitatibus aliquid corporis omnis vitae. Rerum, atque.</p>
+
+        </div>
+        <div class="col-md-6">
+            <img src="wal2.jpg" id="wal2" class="w-100" height="300px" >
+
+        </div>
+
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-6">
+            <img src="wal3.jpg" id="wal3" class="w-100" height="300px" >
+
+        </div>
+        <div class="col-md-6">
+            <p class="mt-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit possimus praesentium harum, voluptates aspernatur tenetur vel incidunt sunt, molestias at accusamus minima cum expedita repudiandae nemo sint fuga. Alias ab atque necessitatibus praesentium sint quae laborum rem quod, sed aut. Repudiandae numquam dolorum harum soluta magni id voluptates inventore eos fuga praesentium quas facilis doloribus commodi modi minus necessitatibus adipisci dicta, nobis repellendus deserunt maxime, saepe rem? Distinctio consequuntur, magnam corporis quasi minima, rem culpa error aliquam quos, officia aliquid?</p>
+
+        </div>
+
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-6">
+            <p class="mt-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deleniti sint reprehenderit voluptate magni, accusantium optio aliquam commodi, molestias dolor quisquam praesentium eveniet at non ea. Atque numquam ex iste dolor quod soluta illo nam, ratione voluptatem vel velit dolorum impedit! Molestias eum expedita modi doloribus excepturi. Cupiditate temporibus eligendi itaque delectus provident quo, distinctio soluta et! Tenetur numquam atque iste distinctio architecto iure nam. Commodi magni blanditiis voluptate molestiae distinctio quis non iure aut. Facere, labore similique. In, facilis!</p>
+
+        </div>
+        <div class="col-md-6">
+            <img src="wal4.jpg" id="wal4" class="w-100" height="300px">
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="row mt-5 bg-dark justify-content-center text-center">
+            <div class="col" id="footer1">
+                <li><span><i class="bi bi-facebook"></i></span><a href="#">Facebook</a></li>
+                <li> <span><i class="bi bi-instagram"></i></span><a href="#">Instagram</a></li>
+                <li> <span><i class="bi bi-twitch"></i></span><a href="#">Twitter</a></li>
+                <li> <span><i class="bi bi-messenger"></i></span><a href="#">Messenger</a></li>
+
+
+
+
+            </div>
+            <div class="col" id="footer2">
+                <li>Mobile:<a href="tel-to">8308280918</a></li>
+                <li>Email:<a href="mail-to">pravinwaghmare1008166@gmail.com</a></li>
+                <li>Adress: Jain Mandir Nanded-431718</li>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+
+    
+</body>
+</html>
